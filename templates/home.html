@@ -1,7 +1,18 @@
 <!-- templates/post.html -->
-<h1>Create Post Page</h1>
-<form method="post" enctype="multipart/form-data">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit New Post</button>
-</form>
+<!-- templates/post.html -->
+{% load static %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'styling/style.css' %}">
+
+
+<div class="text-center">
+
+  <h1>ColorBlUX Workspace</h1> 
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit New Post</button>
+  </form>
+</div>
