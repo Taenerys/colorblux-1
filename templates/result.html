@@ -1,2 +1,8 @@
-<h2>{{ post.text }}</h2>
+{% load static %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'styling/style.css' %}">
+
+<div class="text-center">
     <img src="{{ post.original_img.url}}">
+</div>
